@@ -1,0 +1,158 @@
+.body{
+  height: 100%;
+}
+.Header{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  padding: 3em;
+  min-height: 350px;
+  max-height: 900px;
+}
+.App{
+  animation: appOff 1s forwards;
+  float: left;
+  position: fixed;
+}
+.AppEditMode{
+  animation: appOn 1s forwards;
+  float: left;
+  position: fixed;
+}
+.ArticleEditClose{
+  animation: articleClose 1s forwards;
+  position:relative;
+}
+.ArticleEditOpen{
+  animation: articleOpen 1000ms forwards;
+  position:relative;
+}
+@keyframes articleClose{
+  0%{
+    left:15%;
+  }
+  100%{
+    left:5%;
+  }
+}
+@keyframes articleOpen{
+  0%{
+    left:5%;
+  }
+  100%{
+    left:15%;
+  }
+}
+.PhoneAside{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@keyframes appOff{
+  0%{
+    width: 15%;
+  }
+  100%{
+    width: 5%;
+  }
+}
+@keyframes appOn{
+  0%{
+    width: 5%;
+  }
+  100%{
+    width: 15%;
+  }
+}
+.center{
+  justify-content: center;
+  text-align: center;
+}
+.right{float:right}
+.left{float:left}
+.itemAside{
+  display: block;
+  font-size: 3em;
+  text-decoration: none;
+  color:white;
+  font-size: large;
+  border-top:solid white 1px;
+  border-bottom: solid white 1px;
+  height: 70px;
+}
+.Aside{
+  background-color: #1fbcff;
+}
+.itemAside:hover{
+  color: #0D6EFD;
+  background-color: white;
+  border-right:solid 1px #1fbcff;
+  border-left: solid 1px #1fbcff;
+}
+.Footer{
+  margin-top:8em;
+  font-size: 2em;
+  background-color: #0D6EFD;
+  color:white
+}
+.Link{
+  color:white;
+  text-decoration: none;
+}
+.Link:hover{
+  color:white;
+  animation: LinkNav 1s forwards;
+}
+@keyframes LinkNav{
+  0%{
+    text-decoration:none ;
+  }
+  100%{
+    text-decoration: underline;
+  }
+}
+
+.Coordinate{
+  background: url(https://pbs.twimg.com/media/DPZYNcvXcAAOPiW.jpg:large);
+}
+.Main{
+  background: url(https://www.wallpapertip.com/wmimgs/38-387146_dark-blue-texture-background.jpg);
+}
+.News{
+  background: url(https://www.thesiriusgroup.com/wp-content/uploads/2016/07/Planning-slideV2.jpg);
+}
+.Weather{
+  background: url(https://masyamba.ru/%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%B9%20%D0%BF%D0%B5%D0%B9%D0%B7%D0%B0%D0%B6/48-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0_%D0%B7%D0%B8%D0%BC%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B5%D0%B9%D0%B7%D0%B0%D0%B6.jpg);
+}
+.Pollution{
+  background: url(https://img5.goodfon.ru/original/5616x3744/2/44/myicahel-tamburini-by-myicahel-tamburini-priroda-rastenie-ra.jpg);
+}
+.formInput{
+  background: transparent;
+  border:none;
+  border-bottom: solid 1px black;
+  outline: none;
+}
+.formInput:focus{
+  border-right:dashed 2px gray;
+  border-left:dashed 2px gray;
+  border-top:solid 2px gray
+}
+.formInput:hover{
+  border-right:dashed 1px gray;
+  border-left:dashed 1px gray;
+  border-top:solid 1px gray
+}
+.mainInput{
+  background: transparent;
+  outline: none;
+  border:white 1px solid;
+  color:white;
+}
+.mainInput:hover{
+  border-right:dashed 1px white;
+  border-left:dashed 1px white;
+}
+.mainInput:focus{
+  border-right:dashed 1px white;
+  border-left:dashed 1px white;
+  border-bottom: white 2px solid;
+}
